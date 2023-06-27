@@ -1,0 +1,873 @@
+@font-face {
+    font-family: JETSansDigital;
+    src: local("JETSansDigital"), url("https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Regular-optimised.woff2") format("woff2"), url("https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Regular-optimised.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: JETSansDigitalBold;
+    src: local("JETSansDigital"), url("https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Bold-optimised.woff2") format("woff2"), url("https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-Bold-optimised.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: JETSansDigitalExtraBold;
+    src: url("https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-ExtraBold-optimised.woff2") format("woff2"), url("https://d30v2pzvrfyzpo.cloudfront.net/fonts/JETSansDigital-ExtraBold-optimised.woff") format("woff");
+    font-weight: 800;
+}
+
+html {
+    font-family: JetSansDigital;
+    font-size: 14px;
+}
+
+body {
+    font-family: JetSansDigital;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #fcfcfc; /*#fcfcfb*/
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #333;
+}
+
+#div_box_login {
+    background-color: white;
+    display: inline-block;
+    text-align: left;
+    border-style: solid;
+    border-color: #e2e6e9;
+    border-width: thin;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 32px;
+}
+
+#div_box_registro { /*style="text-align: center; margin: auto; font-family: Arial,sans-serif; background-color: #fcfcfb"*/
+    background-color: white;
+    display: inline-block;
+    text-align: left;
+    border-style: solid;
+    border-color: #e2e6e9;
+    border-width: thin;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 10px 73px 32px;
+    width: 286px;
+    height: auto;
+}
+
+#div_box_busqueda {
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    border-radius: 15px;
+    padding: 25px 16px 40px;
+    max-width: 800px;
+    width: 90%;
+    margin-top: -13%;
+    border: none;
+    height: 50%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    position: relative;
+    top: 0;
+}
+
+#titulo_inicio_busqueda {
+    font-size: 250%;
+    color: #fb6100;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+#subtitulo_inicio_busqueda {
+    font-size: 20px;
+    line-height: 1.17;
+    color: dimgrey;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#boton_facebook {
+    background-color: #465996;
+    border: solid #465996;
+    border-radius: 3px;
+}
+
+#boton_facebook:hover {
+    background-color: #4E63A7;
+    border-color: #4E63A7;
+}
+
+#boton_google {
+    background-color: #4285f4;
+    border: solid #4285f4;
+    border-radius: 3px;
+}
+
+#boton_google:hover {
+    background-color: #5A95F5;
+    border-color: #5A95F5;
+
+}
+
+button {
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-weight: 600;
+}
+
+#boton_inicio {
+    cursor: pointer;
+    background-color: #ff8000;
+    position: relative;
+    border-radius: 3px;
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-weight: 600;
+    border: solid #ff8000;
+}
+
+#boton_inicio:hover {
+    background-color: #DF6400;
+    border-color: #DF6400;
+}
+
+#boton_registro {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    background-color: #fb6100;
+    position: relative;
+    border-radius: 50rem;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    border: solid #fb6100;
+}
+
+#boton_registro:hover {
+    background-color: #e75900;
+    border-color:#e75900;
+}
+
+.rellenar_registro {
+    border: 1px solid #efedea;
+    border-radius: 12px;
+    width: 90%;
+    height: 2.5rem;
+    cursor: text;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.rellenar_registro:hover {
+    background: #efedea;
+}
+
+#rellenar-boton_direccion {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    border: 1px solid #8a8786;
+    border-radius: 50rem;
+}
+
+#rellenar_direccion {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 80%;
+    cursor: text;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#boton_direccion {
+    border: none;
+    background-color: #fb6100;
+    color: white;
+    cursor: pointer;
+    border-radius: 50rem;
+    width: 50%;
+    height: 90%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 15px;
+    margin: 3px;
+}
+
+#boton_direccion:hover {
+	background-color: #e75900;
+}
+
+#contenido_pagina_busqueda {
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+p {
+    font-family: JetSansDigital;
+    font-size: 16px;
+    line-height: 1.29;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+
+span {
+    font-family: JetSansDigital;
+    font-size: 16px;
+    line-height: 1.29;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+
+div {
+    margin-top: 10px;
+}
+
+#label_modify {
+    font-family: JetSansDigital;
+    font-size: 13px;
+}
+
+.input_login {
+    width: 96%;
+    height: 2.1rem;
+    border-radius: 3px;
+    border: 1px solid #c5ccd3;
+    padding: 0 2%;
+}
+
+.nombres_campos_registro {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.titulo_registro {
+    text-align: center;
+}
+
+.flex_container {
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    flex-direction: row;
+    margin: 0;
+    padding: 0 5%;
+    overflow-x: auto;
+}
+
+.columna_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    width: 30%;
+    margin: 7px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.img_container {
+    width: 100%;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.texto_container {
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0px 4px 50px -15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    width: 90%;
+    margin-top: -4px;
+    padding: 5%;
+    overflow: hidden;
+}
+
+#boton-nav{
+    background-color: transparent;
+    float: right;
+    color: #242e30;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+#boton-nav:hover {
+    background: #d9d9d9;
+    color: #515b64;
+}
+
+.barra_navegacion {
+	display: flex;
+    margin: 0;
+    padding: 10px 10% 10px;
+    background-color: white;
+    height: 60px;
+    box-shadow: 0 10px 31px -4px rgba(0, 0, 0, 0.50);
+}
+
+.barra_nav_logo{
+	
+}
+
+.barra_nav_usuario{
+	
+}
+
+.barra_nav_botones{
+	display: flex;
+	flex-direction: row;
+}
+
+.fondo {
+    margin: 0;
+}
+
+.imagen_logo {
+    float: left;
+    width: 130px;
+    height: 32px;
+    cursor: pointer;
+}
+
+a {
+    font-family: JetSansDigital;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #125fca;
+    font-weight: 700;
+}
+
+/*/////////////////////////////*/
+/*////restaurantes_busqueda////*/
+/*/////////////////////////////*/
+
+#flex_check_comida {
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    flex-direction: row;
+    margin: 0;
+    padding: 0 5%;
+    overflow-x: auto;
+}
+
+.columna_check_comida {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    width: 20%;
+    margin: 0;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.img_check_comida {
+    width: 100%;
+    margin: 0;
+    border-radius: 15px;
+
+}
+
+.texto_check_comida {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+/*---------------------------*/
+
+#flex_otras_filtros_restaurantes {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 20px 5%;
+    flex-wrap: nowrap;
+    background-color: transparent;
+}
+
+#columna_otras_filtros {
+    flex-direction: column;
+    max-width: 300px;
+    width: 30%;
+    margin: 0;
+}
+
+#direccion {
+    padding: 7%;
+    text-align: left;
+    margin: 0;
+    background-color: #efefe9;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+.titulo_otras_filtros {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.boton_reiniciar {
+    background-color: white;
+    border: 1px solid #e1e1da;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 13px;
+    color: #464343;
+    font-weight: 800;
+}
+
+.boton_reiniciar:hover {
+    background-color: #efefe9;
+    cursor: pointer;
+}
+
+.flex_otras_filtros {
+    display: flex;
+    border: 1px solid #e1e1da;
+    background-color: white;
+    border-radius: 30px;
+
+    padding: 5px;
+}
+
+.check_otra_filtro {
+    margin: 0;
+    padding: 5px 1px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*---------------------------*/
+
+#columna_restaurantes {
+    flex-direction: column;
+    margin: 0 20px;
+    width: 100%;
+}
+
+#buscador_restaurante {
+    border: 0;
+    outline: none;
+    border-radius: 2.5rem;
+    width: 85%;
+    padding: 0 20px;
+    font-size: 20px;
+    height: 75px;
+    box-shadow: 0 10px 31px -4px rgba(0, 0, 0, 0.50);
+}
+
+#buscador_restaurante:focus {
+    border: 2px solid #4e99ef;
+    padding: 0 18px;
+}
+
+.flex_restaurante {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    margin: 30px 10%;
+    cursor: pointer;
+}
+
+.columna_foto_restaurante {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    margin: 0;
+}
+
+.foto_fondo_restaurante {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.logo_restaurante {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    top: 15px;
+    left: 15px;
+}
+
+.columna_info_restaurante {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin: 10px 10px;
+    padding: 0;
+}
+
+.flex_info_restaurante {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25%;
+    margin: 0;
+    padding: 0;
+}
+
+.nombre_info_restaurante {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.info_restaurante {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*/////////////////////////////*/
+/*/////restaurant-details//////*/
+/*/////////////////////////////*/
+
+.div_box_details {
+    border: none;
+    display: flex;
+    position: relative;
+    float: left;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 1px darkgray;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 23%;
+    max-width: 600px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.div_box_details_inside {
+    display: flex;
+    border: solid #e2e6e9 thin;
+    border-radius: 12px;
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    background-color: #f5f3f1;
+}
+
+.profile_rest {
+    width: 65px;
+    height: 65px;
+    padding: 0;
+    margin-top: -70px;
+    display: inline-block;
+    align-self: center;
+    border: solid #e2e6e9 thin;
+    border-radius: 10px;
+}
+
+.div_box_details_pay {
+    position: sticky;
+    top: 1%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    float: left;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 1px #dbd9d7;
+    text-align: center;
+    width: 20%;
+    padding: 15px;
+    margin-left: 1%;
+    max-width: 600px;
+    margin-top: 23%;
+}
+
+#button_pay {
+    border: #fb6100;
+    background-color: #fb6100;
+    color: #fff;
+    border-radius: 50rem;
+    width: 100%;
+    height: 48px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 3%;
+    margin-right: 15px;
+}
+#button_review {
+    border: #fb6100;
+    background-color: #fb6100;
+    color: #fff;
+    border-radius: 50rem;
+    width: 50%;
+    height: 48px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 3%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+#button_review:hover {
+    background-color: #e75900;
+    border-color: #e75900;
+}
+#button_review:active {
+    background-color: #a93e00;
+    border-color: #a83d00;
+}
+
+.button_pay_delivery {
+    display: flex;
+    position: sticky;
+    top: 15px;
+    float: left;
+    flex-direction: column;
+    border: #efedea;
+    background-color: #efedea;
+    color: #8c999b;
+    border-radius: 50rem;
+    width: 35%;
+    height: 28px;
+    margin: 20px;
+    max-width: 340px;
+    appearance: none;
+    font-weight: normal;
+    padding: 1%;
+    padding-top: 13px;
+    cursor: pointer;
+}
+
+.div_box_details_list {
+    position: sticky;
+    background-color: white;
+    border-radius: 12px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 18%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    padding-right: 6%;
+}
+
+.menu_list {
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+    text-align: justify;
+    padding-left: 15%;
+    cursor: pointer;
+}
+
+.menu_list_item {
+    padding: 10px;
+    border-left: solid #dbd9d7;
+}
+
+.menu_list_item:hover {
+    border-left: solid #242e30;
+    top: 15px
+}
+
+.link_modification_details {
+    color: #354447;
+    line-height: 1.5;
+    font-family: JETSansDigital;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.link_modification_details:hover {
+    color: #242e30;
+    font-weight: bold;
+}
+
+.columna_details {
+    border: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+}
+
+#div_box_main_details {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 30%;
+    padding: 0;
+    margin-top: 15%;
+}
+
+.columna_details_item {
+    border: solid lightgray thin;
+    border-radius: 13px;
+    background-color: white;
+    margin: 3%;
+    width: 90%;
+    padding-left: 3%;
+    padding-bottom: 2%;
+}
+
+/*/////////////////////////////*/
+/*///////restaurant-edit///////*/
+/*/////////////////////////////*/
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    display: block;
+    width: 90%;
+    height: 25px;
+    padding: 10px 5%;
+    font-size: 16px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #ff8000;
+    box-shadow: 0 0 0 3px rgb(197, 93, 8);
+}
+
+.form-control-textarea {
+    display: block;
+    width: 800px;
+    height: 25px;
+    padding: 10px 5%;
+    font-size: 16px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-label {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 30px;
+    position: relative;
+    top: -3px;
+}
+
+.checkbox-input {
+    margin-right: 5px;
+    margin-top: -2px;
+    position: relative;
+    top: -1px;
+}
+
+.radio-label {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 30px;
+    position: relative;
+    top: -2px;
+}
+
+.radio-input {
+    margin-right: 5px;
+    margin-top: -3px;
+    position: relative;
+    top: -1px;
+}
+
+.button-save {
+    width: 50%;
+    color: #fff;
+    background-color: #de7417;
+    border-color: #de7417;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.button-save:hover {
+    background-color: #ad5d0a;
+    border-color: #ad5d0a;
+}
+
+::placeholder {
+    font-family: JETSansDigital;
+}
+
+.dish_div_
