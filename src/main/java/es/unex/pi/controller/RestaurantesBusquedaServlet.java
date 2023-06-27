@@ -63,19 +63,8 @@ public class RestaurantesBusquedaServlet extends HttpServlet {
             if (restaurantList.isEmpty())
                 restaurantList = restaurantDAO.getAllBySearchName(request.getParameter("search"));
         }
-
-        List<Restaurant> restaurantsListAux = new ArrayList<>();
         for (Restaurant restaurant : restaurantList) {
 
-            if (Objects.equals(request.getParameter("availabity"), "1")) {
-                if (restaurant.getAvailable() == 1) {
-                    restaurantsListAux.add(restaurant);
-                }
-            } else if (Objects.equals(request.getParameter("availabity"), "0")) {
-                if (restaurant.getAvailable() == 0) {
-                    restaurantsListAux.add(restaurant);
-                }
-            }
             final ArrayList<Category> categoriesList = new ArrayList<>();
             List<RestaurantCategories> restaurantCategories = restaurantCategoriesDAO.getAllByRestaurant(restaurant.getId());
             for (RestaurantCategories resCat : restaurantCategories) {
@@ -85,9 +74,7 @@ public class RestaurantesBusquedaServlet extends HttpServlet {
             final String categoriesString = categoriesList.stream().map(category -> category.getName()).collect(Collectors.joining(" • "));
             categoriesByRestaurant.put(restaurant.getId(), categoriesString);
         }
-        if (request.getParameter("availabity") != null) {
-            restaurantList = restaurantsListAux;
-        }
+
         request.setAttribute("restaurantList", restaurantList);
         request.setAttribute("categoriesByRestaurant", categoriesByRestaurant);
         RequestDispatcher view = request.getRequestDispatcher("/restaurantes-busqueda.jsp");

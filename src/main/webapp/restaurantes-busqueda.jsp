@@ -53,12 +53,9 @@
             <input type="button" class="boton_reiniciar" value="Reiniciar">
         </div>
         <div class="flex_otras_filtros">
-            <form method="GET" action="${pageContext.request.contextPath}/rest/RestaurantesBusquedaServlet">
-                <div class="check_otra_filtro">
-                    <input type="hidden" >
-                    <input id="admite" type="checkbox" name="availabity" value="1"/>
-                </div>
-            </form>
+            <div class="check_otra_filtro">
+                <input id="admite" type="checkbox" name="availabity" value="1"/>
+            </div>
             <div class="check_otra_filtro">Admite pedidos</div>
         </div>
         <div class="flex_otras_filtros">
@@ -75,7 +72,8 @@
         </form>
         <c:forEach var="restaurant" items="${restaurantList}">
         <form method="GET" action="${pageContext.request.contextPath}/rest/PreviewRestaurantServlet">
-            <label for="restaurant_${restaurant.id}" class="flex_restaurante" onclick="this.querySelector('input[type=submit]').click()">
+            <label for="restaurant_${restaurant.id}" class="flex_restaurante"
+                   onclick="this.querySelector('input[type=submit]').click()">
                 <input type="hidden" name="restaurantid" value="${restaurant.id}">
                 <div class="columna_foto_restaurante" style="height: auto;">
                     <img src="${pageContext.request.contextPath}/img/background_info_rest.webp"

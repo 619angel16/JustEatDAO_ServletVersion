@@ -39,10 +39,6 @@ public class EditUserServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		logger.info("Atendiendo GET del EditUserServlet");
 
-		System.out.println(request.getParameter("name_register"));
-
-
-
 		RequestDispatcher view = request.getRequestDispatcher("/register.jsp");
 		view.forward(request,response);
 	}
